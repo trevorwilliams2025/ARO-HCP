@@ -303,4 +303,6 @@ require (
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2 // indirect
 )
 
+replace github.com/Azure/ARO-Tools/pipelines => github.com/trevorwilliams2025/ARO-Tools/pipelines v0.0.0-20260529013842-7f3671bc8d6b
+
 replace github.com/go-echarts/go-echarts/v2 => github.com/stevekuznetsov/go-echarts/v2 v2.0.0-20251106144453-30c025b42a65

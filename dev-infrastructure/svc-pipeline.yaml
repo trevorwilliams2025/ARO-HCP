@@ -420,6 +420,12 @@ resourceGroups:
         resourceGroup: global
         step: output
         name: globalMSIId
+  - name: istio-upgrade-v2
+    aksCluster: '{{ .svc.aks.name }}'
+    action: IstioUpgrade
+    dependsOn:
+    - resourceGroup: service
+      step: cluster
   - name: acrpull
     aksCluster: '{{ .svc.aks.name }}'
     action: Helm
